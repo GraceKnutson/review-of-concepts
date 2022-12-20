@@ -1,0 +1,156 @@
+/*
+  "This will style all elements to have no space around the edges of the element and line spacing of 140% of 
+  the font size of the element," - Scott Hardman
+*/
+* {
+  margin: 0;
+  line-height: 140%;
+}
+
+/*
+  "This will style the html element, also known as the root element to have a default font size of 62.5% 
+  of the default font size of the browser," - Scott Hardman
+*/
+html {
+  font-size: 62.5%;
+}
+
+/* 
+
+  "This styles the body element to have a background colour of #121212, which will be the main background colour for the entire website. 
+  This will style the body element and all elements that inherit from the body styling to change their font colour to #fdfdfd, which is an
+  off white, and their size to 1.8 times the size of the root element's font size, and to use the Arial font before using the 
+  Helvetica font. If neither font is availible, the browser will use the default sans-serif font," - Scott Hardman 
+*/
+body {
+  background-color: #121212; /* A good standard hex for a dark theme */
+  color: #ededed; /* A good standard hex for text of a dark theme */
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* This styles the nav element to have a background colour. */
+nav {
+  background-color: rgb(74, 213, 156);
+}
+
+/*
+"This styles the unordered list inside the nav to have no space on the inside of the element and to have no bullet points for the list
+items," - Scott Hardman 
+*/
+nav ul {
+  padding: 0; /* Gets rid of space pushing list items further out from side of screen. */
+
+  list-style: none;
+}
+
+/* 
+"This styles all list item elements in the nav to display beside each other, but also allow for changes to their dimensions, and add
+5px of space on the top and the bottom of the list items," - Scott Hardman 
+*/
+nav li {
+  display: inline-block;
+  margin: 5px 0;
+}
+
+/* 
+"This styles all anchors inside the nav to display beside each other, but also allow for changes to their dimensions.
+For example, it allows us to change the height of the anchors so that they are 100% of the size of their parent element, the 
+list items in the nav.
+This styling also adds 15px of space on the inside of the element just above and below the content and 25px on the inside of the element 
+just to the left and the right of the content. This styling makes the background colours of the anchors to be a dark gray and the font colour 
+an off white. Lastly, the anchors will not have an underline," - Scott Hardman 
+*/
+nav a {
+  display: inline-block;
+  height: 100%;
+
+  padding: 15px 25px;
+
+  background-color: #121212;
+  color: #ededed;
+  text-decoration: none; /* Gets rid of underline on these links. */
+}
+
+/* Changes the colours of the nav li when either focused or hovered over, i.e. placing the mouse above or tabbing to the links. */
+nav a:hover,
+nav a:focus {
+  background-color: #ededed;
+  color: #121212;
+}
+
+/* Bolds the anchor when the user clicks. */
+nav a:active {
+  font-weight: bolder;
+}
+
+/*
+"This styles the main heading of the website to add space to the top and bottom of 20px, adds a background of off-white
+(#ededed), changes the font colour to a pastel blue, sets the font size to 4.8 times the size of the root element, aligns the text
+to center, and creates a shadow behind the text that has a colour of #121212, has a horizontal offset of 2px, a vertical
+offset of 3px, and a blur of 1px," - Scott. Hardman
+*/
+h1 {
+  margin: 50px 0;
+  padding: 20px 0;
+  background-color: #ededed;
+  color: rgb(74, 213, 156);
+  font-size: 4.8rem;
+  text-align: center;
+  text-shadow: #121212 2px 3px 1px; /* Colour, offset xy, and blur for a text-shadow. */
+}
+
+/* 
+  "This styles the section that holds all of the important information to have no spacing on the top and bottom of the
+  section and spacing that is equal to 5% of the width of the browser window on the left and right sides of the 
+  section," - Scott Hardman
+*/
+main {
+  margin: 0 5%;
+}
+
+section div {
+  position: relative;
+  top: 50%;
+  transform: translateY(10%);
+  float: left;
+  width: 30%;
+  padding: 1.5% 3%;
+  background-color: #ededed;
+  color: #121212;
+}
+
+section figure {
+  display: inline-block;
+
+  width: 50%;
+  margin-left: 2%;
+}
+
+/*
+  This styles all text within any span element to be bold.
+*/
+span {
+  font-weight: bold;
+}
+
+/*
+  "This styles the element with an ID of definition to underline all the text inside that element,"
+  - Scott Hardman
+*/
+#definition {
+  text-decoration: underline;
+}
+
+/* 
+  This styles the elements with the class of hyrule-places to have italicized text.
+*/
+.hyrule-places {
+  font-style: italic;
+}
+
+footer {
+  clear: both;
+  margin-top: 1px;
+  text-align: center;
+}

@@ -1,0 +1,75 @@
+<!-- 
+  NOTE: This code is a copy of code from a lesson (taught by Mr. Hardman) with minor changes to suit the topic I have chosen. 
+  Thus, certain design decisions do not make sense for the webpage, for example the header, as we needed to learn text-shadow. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOTK Fanpage</title>
+
+    <link rel="stylesheet" href="stylesheets/main.css" />
+  </head>
+  <body>
+    <!-- NOTE: The below comment is how a multiline comment should be formatted. -->
+    <!--
+      "The three semantic tags that must be on every page are header, main, and footer. These are required for organisation and accessibility 
+      purposes. This is a multiline comment.
+
+      Most semantic tags are containers. Just putting text within them without a <p> or <h> tag is not acceptable, with the exception of 
+      figcaption," - Scott Hardman
+    -->
+    <header>
+      <!-- Nav can go inside the header. -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home Page</a></li>
+          <li><a href="trailers.html">Trailer and Teaser</a></li>
+        </ul>
+      </nav>
+      <h1>TOTK Fanpage</h1>
+    </header>
+
+    <main>
+      <!-- We create sections for areas of related content. -->
+      <section>
+        <!-- Inside semantic tags we can use divs to further group content (containers inside containers). -->
+        <div>
+          <h2>What is Tears of the Kingdom?</h2>
+          <p style="margin-top: 11px">
+            "<span id="definition">The Legend of Zelda</span>: Tears of the Kingdom is the upcoming twentieth main installment in The Legend of
+            Zelda series. The game is scheduled to be released on May 12, 2023 on the Nintendo Switch. Development of the game began in 2017
+            after the production for Breath of the Wild concluded. During the E3 2019 Nintendo Direct, it was announced that it would be a
+            sequel to Breath of the Wild. The idea of creating a direct sequel came from the fact that Eiji Aonuma, producer of Breath of the
+            Wild, wanted to revisit the same Hyrule while incorporating a new story and gameplay mechanics. Initially, new ideas were thought
+            of for DLC but evolved into a new game when too many were gathered."
+            <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Tears_of_the_Kingdom" target="_blank">- Zelda Wiki</a>
+          </p>
+        </div>
+        <figure>
+          <!-- Spans should never go around all the content of an element. -->
+          <figcaption style="margin-top: 20px">
+            The image below is an image of the Tears of the Lost Kingdom cover showing areas such as
+            <span class="hyrule-places">Hyrule Castle</span>, <span class="hyrule-places">Death Mountain</span>, and (presumably)
+            <span class="hyrule-places">new playable areas.</span>
+          </figcaption>
+          <img
+            src="images/kingdom-cover.jpg"
+            alt="An image of Link crouching on top of a floating island. There are other floating islands 
+              in the background. Some have stone structures atop them."
+            width="750px" />
+        </figure>
+      </section>
+    </main>
+
+    <footer>
+      <!-- This is the correct way to use text decoration tags. -->
+      <p>
+        <small>&#169; Grace Knutson</small>
+      </p>
+    </footer>
+  </body>
+</html>
